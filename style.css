@@ -1,0 +1,269 @@
+/*Subscribe to my YouTube Channel U CAN CODE for more awesome codes*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    font-family: 'Cookie', cursive;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-color: #5f9ea0; /* darker blue background */
+    overflow: hidden;
+}
+
+.banner {
+    width: 100%;
+    height: 650px;
+    background-image: url(img/a20.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    border-radius: 0 0 500px 0;
+    background-color: #ffffff; /* white background */
+}
+
+.nav {
+    width: 90%;
+    height: auto;
+    background-color: #1c4966; /* darker blue */
+    border-radius: 30px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav b {
+    font-size: 40px;
+    margin-left: 10px;
+    color: #fff; /* black text */
+}
+.nav h1 {
+    font-size: 30px;
+    margin-right: 10px;
+    color: #fff; /* black text */
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.invitation {
+    width: calc(100% - 20px); /* Lebar total dikurangi 20px untuk margin */
+    margin: 20px;
+    text-align: right; /* Mengatur teks ke kanan */
+}
+
+.invitation h2 {
+    color: #1c4966; /* Warna teks */
+    font-size: 32px; /* Ukuran teks */
+    margin-bottom: 10px; /* Jarak bawah judul */
+}
+
+#guest-name {
+    font-size: 32px; /* Ukuran teks */
+    color: #1c4966; /* Warna teks */
+    font-weight: bold; /* Ketebalan teks */
+    margin-bottom: 20px; /* Jarak bawah nama tamu */
+}
+
+.menu h1 {
+    font-size: 30px;
+    color: #fff; /* black text */
+    margin-right: 10px;
+    font-weight: bolder;
+}
+
+.text {
+    width: 100%;
+    position: relative;
+    top: 40px;
+    left: 20px;
+    font-size: 38px;
+    text-align: left;
+}
+
+.text h1 {
+    color: #1c4966; /* darker blue */
+    text-shadow: 0 3px 10px rgba(0,0,0,.5);
+}
+
+.text .date {
+    color: #fff;
+    background-color: #1c4966; /* darker blue */
+    padding: 5px;
+    border-radius: 40px 0 40px 0;
+    transition-duration: .5s;
+}
+
+.text .date:hover {
+    background-color: #fff;
+    color: #1c4966;
+}
+
+.section {
+    width: 100%;
+    height: auto;
+    background-color: #efefef;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.us {
+    width: 95%; /* Mengurangi lebar bagian "Us" */
+    max-width: 1200px; /* Lebar maksimum */
+    height: auto;
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 20px auto; /* Pusatkan bagian "Us" di tengah */
+    padding: 30px;
+    box-shadow: 0 3px 10px 0 rgba(100,100,100,.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.us1 img {
+    width: 100%; /* Gambar mengisi lebar div */
+    height: auto; /* Tinggi otomatis */
+    border-radius: 8px; /* Sudut kotak */
+    object-fit: cover; /* Menghindari deformasi gambar */
+}
+.section h2 {
+    width: 100%;
+    text-align: center;
+    color: #1c4966; /* Warna teks */
+    font-size: 40px; /* Ukuran teks */
+    margin-bottom: 30px; /* Jarak antara judul "Us" dan konten */
+}
+.section h3 {
+    width: 100%;
+    text-align: center;
+    color: #1c4966; /* Warna teks */
+    font-size: 27px; /* Ukuran teks */
+    margin-bottom: 30px; /* Jarak antara judul "Us" dan konten */
+}
+
+.us1 {
+    width: calc(50% - 20px); /* Lebar masing-masing gambar, dikurangi margin */
+    max-width: 300px; /* Lebar maksimum gambar dan teks */
+    margin-bottom: 20px; /* Tambahkan jarak antara potongan gambar */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    overflow: hidden; /* Hindari overflow dari gambar */
+    box-shadow: 0 3px 10px 0 rgba(100,100,100,.3);
+}
+
+
+.us1 span {
+    font-size: 24px; /* Ukuran teks */
+    color: #1c4966; /* Warna teks */
+    text-align: center;
+    margin-top: 10px; /* Jarak antara gambar dan teks */
+}
+
+.us, .venue, .party {
+    width: 97%; /* Mengatur lebar kartu */
+    max-width: 1200px; /* Mengatur lebar maksimum */
+    height: auto;
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 20px auto; /* Pusatkan kartu di tengah */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    box-shadow: 0 3px 10px 0 rgba(100,100,100,.3);
+}
+
+
+
+.venue video {
+    width: calc(50% - 10px); /* Lebar masing-masing video, dikurangi margin */
+    max-width: 300px; /* Lebar maksimum video */
+    height: auto; /* Tinggi otomatis */
+    border: 2px solid #1c4966; /* darker blue */
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+
+
+.venue p, .party p {
+    font-size: 35px;
+    line-height: 1.2;
+    color: #333;
+    width: 100%; /* Mengatur lebar teks */
+    text-align: center; /* center align text */
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    color: #ddd;
+    font-size: 20px;
+    font-family: monospace;
+    background-color: #1c4966; /* darker blue */
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer a {
+    color: #25D366;
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+footer i {
+    margin-right: 10px;
+}
+
+/* Floating button styles */
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #1c4966; /* darker blue */
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.floating-button i {
+    font-size: 24px;
+}

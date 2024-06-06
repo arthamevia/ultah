@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+    <script
+      src="https://kit.fontawesome.com/11acc5a5c1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Cookie"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Ulang tahun</title>
+  </head>
+  <body>
+    <audio id="background-audio" autoplay>
+      <source src="sound.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <div id="audio-control" class="floating-button">
+      <i id="audio-icon" class="fas fa-play"></i>
+    </div>
+    <div class="container">
+      <div class="banner">
+        <div class="nav">
+          <b>Aris My future husband</b>
+        </div>
+        <div class="text">
+          <span class="date">Selamat Menua Sayangku</span>
+        </div>
+      </div>
+      <div class="invitation">
+        <h2>Dari Calon Istri</h2>
+        <b id="guest-name">Yuliyanti Arthamevia</b>
+      </div>
+      <div class="section">
+        <div class="us">
+          <h2><a name="us">Profile</a></h2>
+          <h3>
+            Happy level up sayang...Doa terbaik pastinya buat aa buat terus
+            semangat menjalani hidup pastinya, lebih rajin lagi ibadah aku
+            berdoa agar setiap langkah yang kamu ambil membawa keberuntungan,
+            kesuksesan, dan kebahagiaan.aku bersyukur kepada Tuhan karena Dia
+            menghadiahkanmu kepada dunia. Semoga cinta kita akan terus mekar
+            seperti bunga di musim semi. Selamat ulang tahun, kekasih hati.
+          </h3>
+          <div class="us1">
+            <span>happy my love❤</span>
+            <img src="img/a1.jpg" alt="ii" />
+            <hr />
+            <hr />
+            <img src="img/a2.jpg" alt="ii" />
+          </div>
+          <hr />
+          <hr />
+          <hr />
+          <div class="us1">
+            <img src="img/a3.jpg" alt="ii" />
+            <hr />
+            <hr />
+            <img src="img/a5.jpg" alt="ii" />
+            <span>Sayangnya uli🥰</span>
+          </div>
+          <!-- <div class="us1">
+                    <img src="img/a6.jpg" alt="aa"><hr><hr>
+                    <img src="img/a7.jpg" alt="ii">
+                    
+                </div> -->
+        </div>
+        <div class="venue">
+          <h2><a name="venue">Y | A</a></h2>
+          <video id="venue-video1" src="video/vid1.mp4" autoplay></video>
+          <hr />
+          <hr />
+          <video id="venue-video2" src="video/vid2.mp4"></video>
+          <video id="venue-video3" src="video/vid3.mp4"></video>
+          <hr />
+          <hr />
+          <video id="venue-video2" src="video/vid4.mp4"></video>
+          <p>
+            Berjuta rasa-rasa yang tak mampu diungkapkan kata-kata. Dengan
+            beribu cara-cara kau selalu membuat kubahagia.
+          </p>
+        </div>
+
+        <div class="party">
+          <h2><a name="party">Y | A</a></h2>
+          <img src="img/a14.jpg" alt="">
+          <p>
+            Sejak kita bertemu, hidupku menjadi lebih bermakna. Aku jatuh cinta
+            padamu setiap hari.
+          </p>
+        </div>
+      </div>
+      <footer>
+        <p>Send your best wishes!</p>
+        <a
+          href="https://wa.me/6289671303931?text=Happy%20Engagement%20Aris%20dan%20Yuli💐🥰"
+          target="_blank"
+        >
+          <i class="fab fa-whatsapp"></i> Send to Yuli
+        </a>
+        <a
+          href="https://wa.me/6282115447352?text=Happy%20Engagement%20Aris%20dan%20Yuli💐"
+          target="_blank"
+        >
+          <i class="fab fa-whatsapp"></i> Send to Aris
+        </a>
+      </footer>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const audio = document.getElementById("background-audio");
+        const audioControl = document.getElementById("audio-control");
+        const audioIcon = document.getElementById("audio-icon");
+
+        // Initially set the icon to play
+        audioIcon.classList.add("fa-play");
+
+        // Check if audio is playing after a short delay
+        setTimeout(() => {
+          if (!audio.paused) {
+            audioIcon.classList.remove("fa-play");
+            audioIcon.classList.add("fa-pause");
+          }
+        }, 100);
+
+        audioControl.addEventListener("click", () => {
+          if (audio.paused) {
+            audio.play();
+            audioIcon.classList.remove("fa-play");
+            audioIcon.classList.add("fa-pause");
+          } else {
+            audio.pause();
+            audioIcon.classList.remove("fa-pause");
+            audioIcon.classList.add("fa-play");
+          }
+        });
+
+        // Change icon to play when audio ends
+        audio.addEventListener("ended", () => {
+          audioIcon.classList.remove("fa-pause");
+          audioIcon.classList.add("fa-play");
+        });
+
+        // Ensure icon updates when the audio is manually paused
+        audio.addEventListener("pause", () => {
+          audioIcon.classList.remove("fa-pause");
+          audioIcon.classList.add("fa-play");
+        });
+
+        // Ensure icon updates when the audio is manually played
+        audio.addEventListener("play", () => {
+          audioIcon.classList.remove("fa-play");
+          audioIcon.classList.add("fa-pause");
+        });
+
+        // Get the guest name from URL query parameter
+        // const urlParams = new URLSearchParams(window.location.search);
+        // const guestName = urlParams.get('guest');
+
+        // if (guestName) {
+        //     document.getElementById('guest-name').textContent = guestName;
+        // }
+        var videos = document.querySelectorAll(".venue video");
+        videos.forEach(function (video) {
+          video.play();
+          video.addEventListener("click", function () {
+            if (video.paused) {
+              video.play();
+            } else {
+              video.pause();
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
