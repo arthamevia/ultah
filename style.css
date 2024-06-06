@@ -196,8 +196,6 @@
     box-shadow: 0 3px 10px 0 rgba(100,100,100,.3);
 }
 
-
-
 .venue video {
     width: calc(50% - 10px); /* Lebar masing-masing video, dikurangi margin */
     max-width: 300px; /* Lebar maksimum video */
@@ -207,14 +205,28 @@
     margin-bottom: 10px;
 }
 
-
-
 .venue p, .party p {
     font-size: 35px;
     line-height: 1.2;
     color: #333;
     width: 100%; /* Mengatur lebar teks */
     text-align: center; /* center align text */
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.photo-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 3px 10px rgba(100, 100, 100, 0.3);
 }
 
 footer {
