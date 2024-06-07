@@ -229,13 +229,13 @@
     box-shadow: 0 3px 10px rgba(100, 100, 100, 0.3);
 }
 
-footer {
+/* footer {
     width: 100%;
     height: auto;
     color: #ddd;
     font-size: 20px;
     font-family: monospace;
-    background-color: #1c4966; /* darker blue */
+    background-color: #1c4966;
     margin-top: 20px;
     padding: 20px;
     text-align: center;
@@ -256,7 +256,7 @@ footer a {
 
 footer i {
     margin-right: 10px;
-}
+} */
 
 /* Floating button styles */
 .floating-button {
